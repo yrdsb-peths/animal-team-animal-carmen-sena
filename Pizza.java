@@ -19,7 +19,9 @@ public class Pizza extends Actor
         image.scale(50, 50);
         setImage(image); 
         //Let the pizza fall.
-        setLocation(getX(), getY() + 1);
+        int x = getX();
+        int y = getY() + speed;
+        setLocation(x, y);
         
         //Remove pizza and draw the game Over when pizza gets to bottom
         MyWorld world = (MyWorld)getWorld();
