@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Food for our elephant.
+ * Food for our Monkey.
  * 
  * @author Carmen Cheung 
  * @version May 12, 2025

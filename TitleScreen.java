@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TitleScreen extends World
 {
-    Label titleLabel = new Label("Lily the Elephant", 60);
+    Label titleLabel = new Label("Lily the Monkey", 60);
     Label subLabel = new Label("Click <space> to enter game",30); 
     /**
      * Constructor for objects of class TitleScreen.
@@ -43,10 +43,10 @@ public class TitleScreen extends World
      */
     private void prepare()
     {
-        Elephant elephant = new Elephant();
-        addObject(elephant,487,330);
-        elephant.setLocation(468,295);
-        elephant.setLocation(77,323);
+        Monkey monkey = new Monkey();
+        addObject(monkey,487,330);
+        monkey.setLocation(468,295);
+        monkey.setLocation(77,323);
         Label label = new Label("Click \u2190 and \u2192 to move", 30);
         addObject(label,293,209);
         label.setLocation(297,209);

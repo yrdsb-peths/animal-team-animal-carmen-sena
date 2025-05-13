@@ -1,52 +1,51 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The Elephant, our hero
+ * The Monkey, our hero
  * 
  * @author Sena Godek 
  * @version May 2025
  */
-public class Elephant extends Actor
+public class Monkey extends Actor
 {
-    GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3");
-    GreenfootImage[] idleRight = new GreenfootImage[8];
-    GreenfootImage[] idleLeft = new GreenfootImage[8];
+    GreenfootImage[] idleRight = new GreenfootImage[4];
+    GreenfootImage[] idleLeft = new GreenfootImage[4];
     
-    //Direction the elephant is facing
+    //Direction the Monkey is facing
     String facing = "right";
     SimpleTimer animationTimer = new SimpleTimer();
     /**
     * Constructor - The code that gets run   
     */
-    public Elephant()
+    public Monkey()
     {
         for(int i = 0; i < idleRight.length; i++)
         {
-            idleRight[i] = new GreenfootImage("images/elephant_idle/idle" + i + ".png");
+            idleRight[i] = new GreenfootImage("images/monkey_idle/idle" + (i + 1) + ".png");
             idleRight[i].scale(100,100);
         }
         
         for(int i = 0; i < idleLeft.length; i++)
         {
-            idleLeft[i] = new GreenfootImage("images/elephant_idle/idle" + i + ".png");
+            idleLeft[i] = new GreenfootImage("images/monkey_idle/idle" + (i + 1) + ".png");
             idleLeft[i].mirrorHorizontally();
             idleLeft[i].scale(100,100);
         }
         
         animationTimer.mark();
         
-        //initial elephant image
+        //initial Monkey image
         setImage(idleRight[0]);
     }
     
     /**
-    * Animate the elephant   
+    * Animate the Monkey   
     */
    
     int imageIndex = 0;
-    public void animateElephant()
+    public void animateMonkey()
     {
-        if(animationTimer.millisElapsed() < 100)
+        if(animationTimer.millisElapsed() < 170)
         {
             return;
         }
@@ -76,11 +75,11 @@ public class Elephant extends Actor
             facing = "right";
         }
         
-        //remove Pizza of elephant eatsit
+        //remove Pizza of Monkey eatsit
         eat();
         
-        // Animate the elephant
-        animateElephant();
+        // Animate the Monkey
+        animateMonkey();
     }
     
     /**
@@ -92,7 +91,6 @@ public class Elephant extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createPizza();
             world.increaseScore();
-            elephantSound.play();
         }    
     }
 }

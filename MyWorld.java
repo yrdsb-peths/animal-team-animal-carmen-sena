@@ -11,9 +11,9 @@ public class MyWorld extends World {
     int level = 1; 
     public MyWorld() {
         super(600, 400, 1, false);
-        //Create the elephant object
-        Elephant elephant = new Elephant();
-        addObject(elephant, 300, 300);  
+        //Create the Monkey object
+        Monkey monkey = new Monkey();
+        addObject(monkey, 300, 300);  
         
         //Create a label
         scoreLabel = new Label(0,80);
