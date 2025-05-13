@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Monkey extends Actor
 {
+    GreenfootSound eatingSound = new GreenfootSound("yummy-82939.mp3");
     GreenfootImage[] idleRight = new GreenfootImage[4];
     GreenfootImage[] idleLeft = new GreenfootImage[4];
     
@@ -91,6 +92,7 @@ public class Monkey extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createPizza();
             world.increaseScore();
+            eatingSound.play();
         }    
     }
 }
