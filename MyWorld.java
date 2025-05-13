@@ -42,7 +42,7 @@ public class MyWorld extends World {
         
         if (score % 5 == 0)
         {
-            level += 1; 
+            level += 10; 
         }
     }
     /**
