@@ -2,8 +2,8 @@ import greenfoot.*;
 /**
  * The World our hero lives in. 
  * 
- * @author Carmen Cheung
- * @version Apr 28, 2025
+ * @author Carmen Cheung & Sena Godek
+ * @version May 2025
  */
 public class MyWorld extends World {
     public int score =0;
@@ -33,7 +33,7 @@ public class MyWorld extends World {
     }
     
     /**
-     * Increase score
+     * Increase score based on level
      */
     public void increaseScore()
     {

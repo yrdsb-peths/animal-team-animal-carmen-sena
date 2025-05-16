@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Monkey extends Actor
 {
+    //an audio of saying yummy
     GreenfootSound eatingSound = new GreenfootSound("yummy-82939.mp3");
+    //Arrays of images of the monkey
     GreenfootImage[] idleRight = new GreenfootImage[4];
     GreenfootImage[] idleLeft = new GreenfootImage[4];
     
@@ -64,6 +66,7 @@ public class Monkey extends Actor
         }
     }
     
+    //Monkey moves based on keys pressed
     public void act()
     {
         // Add your action code here.
